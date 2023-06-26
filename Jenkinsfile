@@ -3,7 +3,7 @@ pipeline {
   environment {      
       APPNAME = "lab01"
       IMAGE = "lab01"
-      VERSION = 11
+      VERSION = 12
       REGISTRY = "rolandop"
       DOCKER_HUB_LOGIN = credentials('dockerhub-rolandop')
   }
