@@ -19,7 +19,8 @@ namespace Lab01.Controllers
         }
 
 
-        [HttpGet(Name = "Version")]
+        [HttpGet()]
+        [Route("Version")]
         public String Version()
         {
             return "V13";
