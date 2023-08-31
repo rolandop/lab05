@@ -16,7 +16,7 @@ spec:
         app: lab01
     spec:
       containers:
-      - name: Lab01
+      - name: lab01
         image: "rolandop/lab01:13"
         ports:
         - containerPort: 80
