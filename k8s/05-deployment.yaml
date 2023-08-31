@@ -1,0 +1,23 @@
+# https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lab01-deployment
+  labels:
+    app: lab01
+spec:
+  selector:
+    matchLabels:
+      app: lab01
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: lab01
+    spec:
+      containers:
+      - name: Lab01
+        image: "rolandop/lab01:13"
+        ports:
+        - containerPort: 80
+          name: http
