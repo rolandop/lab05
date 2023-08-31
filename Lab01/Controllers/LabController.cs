@@ -26,6 +26,13 @@ namespace Lab01.Controllers
             return "V13";
         }
 
+        [HttpGet()]
+        [Route("HostId")]
+        public String HostId()
+        {
+            return System.Net.Dns.GetHostName();
+        }
+
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
