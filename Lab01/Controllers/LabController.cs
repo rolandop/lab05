@@ -30,7 +30,7 @@ namespace Lab01.Controllers
         [Route("HostId")]
         public String HostId()
         {
-            return System.Net.Dns.GetHostName();
+            return System.Net.Dns.GetHostName() + "\n";
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
