@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: lab01
-        image: "rolandop/lab01:13"
+        image: "rolandop/lab01:14"
         ports:
         - containerPort: 80
           name: http
