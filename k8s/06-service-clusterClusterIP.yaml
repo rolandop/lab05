@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: lab01srv
+  name: lab01
 spec:
   ports:
   - port: 80
