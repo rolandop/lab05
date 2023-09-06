@@ -2,14 +2,14 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: lab01-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$1
+  annotations:    
+    kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
     - host: hello-world.info
       http:
         paths:
-          - path: /
+          - path: /Lab
             pathType: Prefix
             backend:
               service:
