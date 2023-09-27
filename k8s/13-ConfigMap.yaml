@@ -1,5 +1,5 @@
 # https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
-apiVersion: apps/v1
+apiVersion: v1
 kind: ConfigMap
 metadata:
   name: lab01-config
