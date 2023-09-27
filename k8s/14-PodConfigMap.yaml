@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-configMap
+  name: pod-configmap
   labels:
     app: lab01
 spec:
