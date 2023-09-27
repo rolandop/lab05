@@ -23,7 +23,7 @@ namespace Lab01.Controllers
         [Route("Version")]
         public String Version()
         {
-            return "V13";
+            return "V15";
         }
 
         [HttpGet()]
@@ -31,6 +31,14 @@ namespace Lab01.Controllers
         public String HostId()
         {
             return System.Net.Dns.GetHostName() + "\n";
+        }
+
+        [Route("GetEnv")]
+        public string GetEnv(string key)
+        {
+            return key + "=" +
+                (Environment.GetEnvironmentVariable(key) ?? "") + "\n";
+            
         }
 
         [HttpGet(Name = "GetWeatherForecast")]

@@ -4,7 +4,7 @@ pipeline {
       APPNAME = "lab01"
       IMAGE = "lab01"
       PORT = "8091"
-      VERSION = 14
+      VERSION = 15
       REGISTRY = "rolandop"
       DOCKER_HUB_LOGIN = credentials('dockerhub-rolandop')
   }
